@@ -1,0 +1,28 @@
+--下载Tomcat
+  Tomcat官网：http://tomcat.apache.org/
+  选择Tomcat7.0 地址：https://tomcat.apache.org/download-70.cgi
+                选择 64-bit Windows zip (pgp, sha512) 这个是解压版(推荐)
+		32-bit/64-bit Windows Service Installer (pgp, sha512) 这个是安装版
+
+--下载完之后解压到硬盘目录下，不要用中文名称的文件。我这里解压到C:\Java\apache-tomcat-7.0.92
+
+--配置环境变量
+
+  以win10系统为例：
+  我的电脑右键属性--高级系统设置--环境变量--系统变量
+  新建系统变量，
+  变量名：CATALINA_HOME 值：C:\Java\apache-tomcat-7.0.92（此处为Tomcat解压的地址）
+  
+  配置path 系统变量，增加 C:\Java\apache-tomcat-7.0.92\bin （此处为Tomcat的bin目录下）
+
+--启动Tomcat
+
+  --1.双击bat文件启动
+    进入到tomcat安装目录的bin目录下，双击startup.bat即可启动Tomcat。
+  --2.命令行启动
+    cmd命令打开命令行窗口，直接输入startup然后回车
+  --3.浏览器测试
+    启动好Tomcat后，在浏览器地址栏输入：http://localhost:8080/ 出现猫脸的页面说明成功了
+
+
+
